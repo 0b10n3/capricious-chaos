@@ -1,4 +1,10 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+import '../styles/global.css';
+
+const pageTittle = "Quantrix";
 
 ---
 
@@ -11,10 +17,10 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-
-		<h1>Quantrix</h1>
+		<Header />
+		<h1>{pageTittle}</h1>
 		<h3>smart data for smart companies</h3>
+
+		<Footer />
 	</body>
 </html>
